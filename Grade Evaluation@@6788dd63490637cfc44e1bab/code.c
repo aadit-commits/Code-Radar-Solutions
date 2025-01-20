@@ -15,8 +15,11 @@ int main() {
     else if (g=='D'){
         printf("Below Average");
     }
-    else {
+    else if (g=='F') {
         printf("Fail");
+    }
+    else {
+        printf("Invalid");
     }
     return 0;
 }
