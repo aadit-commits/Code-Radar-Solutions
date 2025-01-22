@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 int main() {
     char name,hobby;
     int age;
