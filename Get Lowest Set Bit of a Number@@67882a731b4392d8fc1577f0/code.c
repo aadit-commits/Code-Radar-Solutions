@@ -3,6 +3,7 @@
 int main() {
     int a;
     scanf("%d", &a);
-    printf("%d", a &- a);
+    int r=__builtin_ctz(a);
+    printf("%d",r);
     return 0;
 }
