@@ -6,7 +6,7 @@ int main() {
     for (i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int le=arr[0];
+    int le=-1;
     for (i=0;i<n;i++){
         if (arr[i]%2==0){
             if (arr[i]>le){
