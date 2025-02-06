@@ -1,38 +1,40 @@
 #include <stdio.h>
+#include <limits.h>
 
-int sl(int arr[],int n){
-
-    if (n<2){
+int sl(int arr[], int n) {
+    if (n < 2) {
         return -1;
     }
-    int max=-1;
-    int smax=-1;
-    for (int i=0;i<n;i++){
-        if (max<arr[i]){
-            max=arr[i];
-        }
-    }
-    for (int i=0;i<n;i++){
-        if (smax<arr[i] && arr[i]!=max){
-            smax=arr[i];
+
+    int max = INT_MIN, smax = INT_MIN;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > max) {
+            smax = max; // update second largest before max
+            max = arr[i];
+        } else if (arr[i] > smax && arr[i] != max) {
+            smax = arr[i];
         }
     }
 
-    if (smax==-1){
-        return -1;
+    if (smax == INT_MIN) {
+        return -1; // No second largest element
     }
+
     return smax;
 }
 
 int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for (int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int result=sl(arr,n);
-    printf("%d",result);
+
+    int result = sl(arr, n);
+    printf("%d", result);
     return 0;
 }
+
 
