@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int countLeadingZeros(unsigned int n) {
+int countLeadingZeros(int n) {
     int count = 0;
     
     if (n == 0) {
