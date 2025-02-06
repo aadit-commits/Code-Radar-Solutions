@@ -14,6 +14,11 @@ int main() {
             break;
         }
     }
+    if (peak==7){
+        printf("-1")
+    }
+    else{
     printf("%d", peak);
+    }
     return 0;
 }
