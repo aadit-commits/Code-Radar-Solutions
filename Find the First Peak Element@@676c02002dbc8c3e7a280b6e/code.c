@@ -15,7 +15,7 @@ int main() {
         }
     }
     if (peak==7){
-        printf("-1")
+        printf("-1");
     }
     else{
     printf("%d", peak);
