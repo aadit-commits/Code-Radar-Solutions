@@ -7,10 +7,13 @@ int countLeadingZeros(int n) {
         return 32;
     }
     
-    while ((n & (1 << 31)) == 0) {
+      for (int i = 31; i >= 0; i--) {
+        if ((n >> i) & 1) {
+            break;
+        }
         count++;
-        n <<= 1;  
     }
+    
     
     return count;
 }
