@@ -7,14 +7,13 @@ int main() {
     for (int i=0;i<n;i++){
         scanf("%d", &arr[i]);
     }
+    int peak=arr[n-1];
     for (int i=0;i<n;i++){
         if (arr[i]>arr[i+1] && arr[i]>arr[i-1]){
-            printf("%d",arr[i]);
-            
-        }
-        else {
-            printf("%d", arr[n-1]);
+            peak=arr[i];
+            break;
         }
     }
+    printf("%d", peak);
     return 0;
 }
