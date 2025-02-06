@@ -8,7 +8,7 @@ unsigned int setNthBit(unsigned int n, int bit_position) {
 int main() {
     unsigned int num;
     int bit_position;
-    scanf("%d %u",%num, &bit_position);
+    scanf("%d %d",%num, &bit_position);
     unsigned int result = setNthBit(num, bit_position);
     printf("%u\n", bit_position, result);
 
