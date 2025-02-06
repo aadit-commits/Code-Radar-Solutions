@@ -8,12 +8,12 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int max=arr[0];
+    int smax=arr[0];
     for (i=1;i<=n;i++){
         if (max<arr[i]){
             max=arr[i];
         }
     }
-    int smax=arr[0];
     for (i=1;i<=n;i++){
         if (smax<arr[i] && smax!=max){
             smax=arr[i];
