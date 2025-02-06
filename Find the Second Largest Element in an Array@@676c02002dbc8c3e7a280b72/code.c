@@ -28,11 +28,11 @@ int main() {
     int n;
     scanf("%d",&n);
     int arr[n];
-    for (i=0;i<n;i++){
+    for (int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
     int result=sl(arr,n);
-    printf("%d",result)
+    printf("%d",result);
     return 0;
 }
 
