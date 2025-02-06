@@ -10,7 +10,7 @@ int main() {
     int bit_position;
     scanf("%u %d",&num, &bit_position);
     unsigned int result = setNthBit(num, bit_position);
-    printf("%u\n", bit_position, result);
+    printf("%u\n",result);
 
     return 0;
 }
