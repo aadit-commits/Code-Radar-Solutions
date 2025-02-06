@@ -5,10 +5,11 @@ int main() {
     scanf("%d", &n);
     int arr[n];
     for (int i=0;i<n;i++){
-        printf("%d", &arr[i]);
+        scanf("%d", &arr[i]);
     }
     for (int i=0;i<n;i++){
-        printf("%d ",arr[i]+arr[i+1]);
+        res=arr[i]+arr[i+1];
+        printf("%d",res);
     }
     return 0;
 }
