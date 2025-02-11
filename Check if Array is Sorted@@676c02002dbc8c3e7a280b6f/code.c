@@ -9,11 +9,11 @@ int main() {
     }
     int count=0;
     for (int j=1;j<n;j++){
-        if (arr[i]<=arr[i+1]){
+        if (arr[j]<=arr[j+1]){
             continue;
         }
         else {
-            count++:
+            count++;
         }
     }
     if (count>0){
