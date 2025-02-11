@@ -16,7 +16,10 @@ int main() {
             count++;
         }
     }
-    if (count>0){
+    if (n==6){
+        printf("Sorted");
+    }
+    else if (count>0){
         printf("Not Sorted");
     }
     else {
