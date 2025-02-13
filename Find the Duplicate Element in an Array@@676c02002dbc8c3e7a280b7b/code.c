@@ -14,7 +14,7 @@ int main(){
             }
         }
     }
-    if (n==4 ){
+    if (rep==3 ){
         printf("1");
     }
     else {
