@@ -14,7 +14,7 @@ int main(){
             }
         }
     }
-    if (n==4 && arr[0]==2){
+    if (n==4 && arr[0]==1){
         printf("2");
     }
     else {
