@@ -18,6 +18,7 @@ int main(){
             smax=arr[k];
         }
     }
-    printf("%d",max*smax);
+    int mp=max*smax;
+    printf("%d",mp);
     return 0;
 }
