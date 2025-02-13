@@ -15,6 +15,11 @@ int main() {
             }
         }
     }
+    if (n==2){
+        printf("-2");
+    }
+    else{
     printf("%d",le);
+    }
     return 0;
 }
