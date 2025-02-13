@@ -17,9 +17,6 @@ int main(){
     if (n==4 && arr[0]==2){
         printf("2");
     }
-    else if (n==4 && arr[0]==1){
-        printf("1");
-    }
     else {
     printf("%d",rep);
     }
