@@ -7,9 +7,10 @@ int main() {
     for (int i=0;i<n;i++){
         scanf("%d", &arr[i]);
     }
+    int sum=0;
     for (int i=0;i<n;i++){
-        int res=arr[i+1]+arr[i+2];
-        printf("%d ",res);
+        sum+=arr[i];
+        printf("%d",sum);
     }
     return 0;
 }
