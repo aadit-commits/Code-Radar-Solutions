@@ -2,10 +2,15 @@
 
 int isPrime(int num){
     int ip=1;
+    if (num==0 || num==1){
+        ip=0;
+    }
+    else {
     for (int i=2;i*i<=num;i++){
         if (num%i==0){
             ip=0;
         }
+    }
     }
     return ip;
 }
