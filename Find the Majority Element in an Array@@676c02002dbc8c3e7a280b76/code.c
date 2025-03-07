@@ -20,4 +20,16 @@ int main(){
         }
     }
     printf("%d",ans);
+    freq = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == ans) {
+            freq++;
+        }
+    }
+    if (freq > n / 2) {
+        printf("%d", ans);
+    } else {
+        printf("-1");
+    }
+    return 0;
 }
