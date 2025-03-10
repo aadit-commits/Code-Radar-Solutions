@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 
-int fibseries(int i){
-    if (i==0 || i==1){
-        return i;
+int fibonacciSeries(int n){
+    if (n==0 || n==1){
+        return n;
     }
     else {
-        return fibseries(i-1)+fibseries(i-2);
+        return fibonacciSeries(n-1)+fibonacciSeries(n-2);
     }
     return 0;
 
