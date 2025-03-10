@@ -18,5 +18,6 @@ int fibseries(int i){
     else {
         return fibseries(i-1)+fibseries(i-2);
     }
+    return 0;
 
 }
