@@ -9,13 +9,19 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int i=0,j=n-1;
+    int ans=0;
     while (i<j){
         if (arr[i]!=arr[j]){
-            printf("NO");
+            ans++;
             break;
         }
         i++;
         j--;
     }
-    printf("YES");
+    if (ans==0){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
 }
